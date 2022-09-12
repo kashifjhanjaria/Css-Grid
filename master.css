@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+body {
+  background: gray;
+}
+:root {
+  --box-1: #4c0033;
+  --box-2: #4c0033;
+  --box-3: #af0171;
+  --box-4: #e80f88;
+  --box-5: #1c6758;
+  --box-6: #3d8361;
+  --box-7: #d6cda4;
+  --box-8: #125c13;
+  --box-9: #16213e;
+  --box-10: #0f3460;
+  --box-11: #533483;
+  --box-12: #e94560;
+  --box-13: #5800ff;
+  --box-14: #0096ff;
+  --box-15: #00d7ff;
+  --box-16: #72ffff;
+  --box-17: #f7fd04;
+  --box-18: #f9b208;
+  --box-19: #f98404;
+  --box-20: #fc5404;
+  --box-21: #277bc0;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-content: end;
+  padding: 20px;
+  gap: 20px;
+}
+.box {
+  padding: 20px;
+  color: white;
+  border-radius: 8px;
+  /* justify-content: center; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.box > h1 {
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.box-1 {
+  background-color: var(--box-1);
+}
+.box-2 {
+  background-color: var(--box-2);
+}
+.box-3 {
+  background-color: var(--box-3);
+}
+.box-4 {
+  background-color: var(--box-4);
+  grid-column-start: 4;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 6;
+}
+.box-5 {
+  background-color: var(--box-5);
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 5;
+}
+.box-6 {
+  background-color: var(--box-6);
+}
+
+.box-7 {
+  background-color: var(--box-1);
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+.box-8 {
+  background-color: var(--box-8);
+}
+.box-9 {
+  background-color: var(--box-9);
+}
+.box-10 {
+  background-color: var(--box-10);
+}
+.box-11 {
+  background-color: var(--box-11);
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: 6;
+}
+.box-12 {
+  background-color: var(--box-12);
+}
+.box-13 {
+  background-color: var(--box-13);
+}
+.box-14 {
+  background-color: var(--box-14);
+}
+.box-15 {
+  background-color: var(--box-15);
+}
+.box-16 {
+  background-color: var(--box-16);
+}
+.box-17 {
+  background-color: var(--box-17);
+}
+.box-18 {
+  background-color: var(--box-18);
+}
+.box-19 {
+  background-color: var(--box-19);
+}
+.box-20 {
+  background-color: var(--box-20);
+}
+.box-21 {
+  background-color: var(--box-21);
+}
+
+@media only screen and (max-width: 600px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    padding: 20px;
+    gap: 20px;
+  }
+}
